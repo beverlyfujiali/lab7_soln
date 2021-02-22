@@ -23,12 +23,12 @@ You might have used a record type instead of a tuple, for instance,
     type color = { red : int; green : int; blue : int } ;;
 
 That could work too. And the user of the module (the file
-lab7_part2.ml) wouldn't be able to tell the difference, just like it
-can't tell the difference with the horribly obfuscated implementation
-in the original version of color.ml. 
+`lab7_part2.ml`) *wouldn't be able to tell the difference*, just like
+it can't tell the difference with the horribly obfuscated
+implementation in the original version of `color.ml`.
 
 You'll notice that we've moved all of the documentation on module
-elements (types, functions, and the like) into the .mli file, since
+elements (types, functions, and the like) into the `.mli` file, since
 it's the signature file that codifies what users of the module "need
 to know". *)
 

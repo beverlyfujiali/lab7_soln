@@ -23,9 +23,9 @@ files to complete all exercises:
 Part 4: Polymorphic abstract types
 
 You may have noticed that the stack module in Part 3 focused
-exclusively on int types. But this doesn't have to be so: we can also
-create modules with polymorphic abstract data types, even ones
-protected by a signature.
+exclusively on stacks of `int` values. But this doesn't have to be so:
+we can also create modules with polymorphic abstract data types, even
+ones protected by a signature.
 
 Below is a signature for a stack data structure, but providing a
 polymorphic abstract type so that we can generalize stacks to be int
@@ -120,8 +120,9 @@ let sample_stack () =
    make that impossible. *)
 
 (*......................................................................
-Exercise 4C: Write an expression to generate a stack with the
-`sample_stack` function above and name the top element `top_el`.
+Exercise 4C: Write an expression that generates a stack with the
+`sample_stack` function above and extracts the top element of the
+stack, naming it `top_el`.
 ......................................................................*)
 
 let top_el : string = Stack.top (sample_stack ()) ;;
